@@ -17,6 +17,9 @@ header{
 #college_name>h2{
     font-size: 27px;
 }
+.dropdown-item{
+    transition: 0.3s;
+}
 
 @media only screen and (min-width:1200px) {
     #college_name>h1{
@@ -86,4 +89,23 @@ header{
 }
 .card{
     margin-bottom: 5%;
+}
+
+#footer{
+    margin-bottom: 0;
+}
+#footer_icons{
+    margin-bottom: 5%;
+}
+#footer_icons>div>a>i{
+    font-size: 2em;
+    color: rgba(255, 255, 255, 0.777);
+    transition: 0.3s;
+}
+#footer_icons>div>a>i:hover{
+    font-size: 2em;
+    color: #777;
+}
+#footer_links{
+    margin: 5% auto;
 }
