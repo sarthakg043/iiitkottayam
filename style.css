@@ -1,12 +1,7 @@
-<<<<<<< HEAD
-body {
-    background-color: antiquewhite;
-=======
 body{
     /* background-color: #f8f9fa; */
     background-color: #f8f7ff;
     /* background-color: #d4f6fc; */
->>>>>>> origin/navyam
     width: 100vw;
 }
 
@@ -25,13 +20,6 @@ header {
 #college_name>h2 {
     font-size: 27px;
 }
-<<<<<<< HEAD
-
-.dropdown-item {
-    transition: 0.3s;
-}
-=======
->>>>>>> origin/navyam
 
 @media only screen and (min-width:1200px) {
     #college_name>h1 {
@@ -122,57 +110,6 @@ header {
 }
 /* //updated css by nr */
 
-<<<<<<< HEAD
-#footer {
-    margin-bottom: 0;
-}
-
-#footer_icons {
-    margin-bottom: 5%;
-}
-
-#footer_icons>div>a>i {
-    font-size: 2em;
-    color: rgba(255, 255, 255, 0.777);
-    transition: 0.3s;
-}
-
-#footer_icons>div>a>i:hover {
-    font-size: 2em;
-    color: #777;
-}
-
-#footer_links {
-    margin: 5% auto;
-}
-
-/* //updated css by nr */
-
-table,
-td,
-thead,
-tbody {
-    border: 2px solid black;
-    border-radius: 5px;
-}
-
-table {
-    width: 40%;
-}
-
-.main {
-
-    display: flex;
-    /* text-align: justify; */
-
-}
-
-#welcome {
-    text-align: justify;
-}
-
-.content {
-=======
 table,td,thead,tbody{
     border: 2px solid black;
     border-radius: 5px;
@@ -191,19 +128,11 @@ table{
     text-align: justify;
 }
 .content{
->>>>>>> origin/navyam
     width: 40%;
     margin-left: 1.8em;
     padding-left: 1.8em;
 }
-<<<<<<< HEAD
-
-.placement {
-    margin-left: 10%;
-}
-=======
 .placement{
     margin-left: 10%;
 }
 
->>>>>>> origin/navyam
