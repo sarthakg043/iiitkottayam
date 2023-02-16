@@ -1,6 +1,5 @@
 body{
     background-color: antiquewhite;
-    width: 100vw;
 }
 
 img#logo{
@@ -13,7 +12,20 @@ header{
     align-items: center;
     margin: 0;
     padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
 }
+
+nav{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+button.navbar-toggler{
+    margin-right: 15px;
+}
+
 #college_name>h2{
     font-size: 27px;
 }
@@ -92,7 +104,9 @@ header{
 }
 
 #footer{
-    margin-bottom: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
 }
 #footer_icons{
     margin-bottom: 5%;
@@ -108,4 +122,10 @@ header{
 }
 #footer_links{
     margin: 5% auto;
+}
+@media (min-width: 768px){
+    .row-cols-md-5>* {
+        flex: 0 0 auto;
+        width: 40%;
+    }
 }
