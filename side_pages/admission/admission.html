@@ -1,13 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admission</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Admission</title>
+	<link rel="shortcut icon" type="image/png" href="https://www.iiitkottayam.ac.in/data/images/main/logo-mini.png">
+	
+	<!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">    
+	
+	<!-- Font Awesome Library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>    
+	
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="../../style.css">
+	<link rel="stylesheet" href="admission.css">
 </head>
 <body>
-    <font color="blue"><h1 align="center">Admission</h1>
+	<header class="bg-dark" data-bs-theme="dark">
+		<img src="../../assets/imgs/logo.jpg"  class="img-thumbnail" id="logo" alt="IIITK logo">
+		<span id="college_name">
+			<h1>भारतीय सूचना प्रौद्योगिकी संस्थान कोट्टायम</h1>
+			<h2>Indian Institute of Information Technology Kottayam</h2>
+		</span>
+	</header>
+	<nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed" data-bs-theme="dark">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Home</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+				<div class="offcanvas-header">
+					<h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Home</h5>
+					<button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body">
+					<ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Courses
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="side_pages/CSE/CSE.html" target="_blank">B.Tech (CSE)</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" href="#">B.Tech (Cyber Security)</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" href="#">B.Tech (ECE)</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" href="#">M.Tech</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" href="#">Ph.D</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								People
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="side_pages/admission/admission.html">Admission</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" href="#">Head of Department</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" href="#">Faculty</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" href="#">Technical</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" href="#">Professional Support Staff</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Facilities
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Hostel</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" href="#">Security</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" href="#">IIIT Kottayam Campus Network</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" href="#">Gymnasium</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" href="#">Sports</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="side_pages/placement/placement.html" role="button">
+								Placement
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>        
+		</div>
+	</nav>
+
+	<section class="container-fluid" id="main_content">
+    <h1 id="admission_heading">Admission</h1>
     <h2>I.Undergraduate Programmes</h2>
     </font>
     
@@ -16,14 +106,14 @@
 
     <p>Admission to the B.Tech/B.Tech-MS programme will be based on performance in the Joint Entrance Examination (JEE)/Main conducted by National
      Testing Agency(NTA) (subject to change if any ordered by Ministry of Education, Govt. of India) through the counselling under JoSAA/CSAB
-     <a href="https://josaa.nic.in/webinfo/Page/Page?PageId=1&LangId=P"> Click here for details..</a></p>
+     <a href="https://josaa.nic.in"> Click here for details..</a></p>
 
      <p>The number of seats in each branch of the B.Tech/B.Tech-MS programme for which admission is to be made will be decided by its Academic
       Advisory Committee/Senate. Seats are reserved for candidates belonging to the Scheduled Castes, Scheduled Tribes, Other Backward Classes,
      EWS Category and Physically challenged candidates as per the guidelines set by the Government of India.</p>
 
      <b>(1) The fee approved for the BTech program (2022 admission) is as follows.</b><br>
-     <table border="1" cellspacing="0">
+     <table cellspacing="0">
         <tbody><tr><th>Details </th>
         <th colspan="2">First Year</th>
         <th colspan="2">Second Year</th>
@@ -171,24 +261,50 @@
             <td>Mess (One time Fee)</td>
             <td colspan="8" style="text-align: center">750/-</td>
                                 </tr> 
-    </tbody>
-</table><br>
-1. Mode of reporting at the Institute-<b> Offline</b><br>
-2. Date of commencement of classes-<b> Will be finalized according to the Josaa/CSAB schedule and will be declared later.</b><br><br>
+    	</tbody>
+		</table>
+		<br>
+		1. Mode of reporting at the Institute-<b> Offline</b><br>
+		2. Date of commencement of classes-<b> Will be finalized according to the Josaa/CSAB schedule and will be declared later.</b><br><br>
 
-<b>(b) Non SAARC & SAARC -> As per DASA fee structure DASA Admission-2022.</b><br>
-<font color="blue"><h2>II. Post Graduate Programmes (For Working Professionals).</h2></font>
-<a href="https://mtech.iiitkottayam.ac.in/">M.Tech Admission for Working Professionals-2022-Clicke here to view details</a><br>
-<b>(i). M.Tech in Artificial Intelligence and Data Science<br>
-(ii). M.Tech in Cyber Security<br>
-(iii). M.Tech in CSE with specialization in FinTech<br>
-(iv). M.Tech. in CSE with specialization in Big Data and Machine Learning</b><br>
-<font color="blue"><h2>III. Doctoral Programmes.</h2></font>
-<a href="https://phdr.iiitkottayam.ac.in/">PhD Admission-2022- Click here view details</a><br>
-<b>(i). Computer Science and Engineering(CSE)<br>
-(ii). Electronics and Communication Engineering(ECE)<br>
-(iii). Mathematics</b>
+		<b>(b) Non SAARC & SAARC -> As per DASA fee structure DASA Admission-2022.</b><br>
+		<font color="blue"><h2>II. Post Graduate Programmes (For Working Professionals).</h2></font>
+		<a href="https://mtech.iiitkottayam.ac.in/">M.Tech Admission for Working Professionals-2022-Clicke here to view details</a><br>
+		<b>(i). M.Tech in Artificial Intelligence and Data Science<br>
+		(ii). M.Tech in Cyber Security<br>
+		(iii). M.Tech in CSE with specialization in FinTech<br>
+		(iv). M.Tech. in CSE with specialization in Big Data and Machine Learning</b><br>
+		<font color="blue"><h2>III. Doctoral Programmes.</h2></font>
+		<a href="https://phdr.iiitkottayam.ac.in/">PhD Admission-2022- Click here view details</a><br>
+		<b>(i). Computer Science and Engineering(CSE)<br>
+		(ii). Electronics and Communication Engineering(ECE)<br>
+		(iii). Mathematics</b>
 
-    
+	</section>
+	<footer  id="footer" class="bg-dark row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top d-flex justify-content-center" data-bs-theme="dark">
+		<div class="container container-fluid row align-items-center">
+			<div id="footer_icons" class="row align-items-center col-12">
+				<div class="col-3"><a href="https://twitter.com/iiitkkottayam?lang=en" target="blank"><i class="fa-brands fa-twitter"></i></a></div>
+				<div class="col-3"><a href="https://www.facebook.com/iiitkottayamofficial/" target="blank"><i class="fa-brands fa-facebook"></i></a></div>
+				<div class="col-3"><a href="https://in.linkedin.com/company/iiit-kottayam" target="blank"><i class="fa-brands fa-linkedin"></i></a></div>
+				<div class="col-3"><a href="https://www.youtube.com/@IIITKottayamofficial"><i class="fa-brands fa-youtube"></i></a></div>
+			</div>
+			<div class="col-3 mb-3">
+				<h5>Section</h5>
+				<ul class="nav flex-column" id="footer_links">
+					<li class="nav-item mb-2"><a href="https://lms.iiitkottayam.ac.in/login/index.php" class="nav-link p-0 text-muted">LMS</a></li>
+					<li class="nav-item mb-2"><a href="https://www.iiitkottayam.ac.in/#!/campus/hostel" class="nav-link p-0 text-muted">Hostels</a></li>
+					<li class="nav-item mb-2"><a href="https://www.iiitkottayam.ac.in/#!/media" class="nav-link p-0 text-muted">Achievments</a></li>
+					<li class="nav-item mb-2"><a href="https://www.iiitkottayam.ac.in/#!/contact" class="nav-link p-0 text-muted">Contact</a></li>
+					<li class="nav-item mb-2"><a href="https://www.iiitkottayam.ac.in/#!/sitemap" class="nav-link p-0 text-muted">Site Map</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
 </body>
 </html>
