@@ -26,6 +26,13 @@ button.navbar-toggler{
     margin-right: 15px;
 }
 
+.nav-link{
+    transition: 0.3s;
+}
+.dropdown-item{
+    transition: 0.3s;
+}
+
 #college_name>h2{
     font-size: 27px;
 }
@@ -40,6 +47,10 @@ button.navbar-toggler{
     img#logo{
         height: 100px;
     }
+    #carouselExampleRide{
+        transform: scale(0.7);
+        border: 20px inset rgb(33, 37, 41);
+    }
 }
 @media only screen and (max-width:1199.9px) {
     #college_name>h1{
@@ -50,6 +61,10 @@ button.navbar-toggler{
     }
     img#logo{
         height: 90px;
+    }
+    #carouselExampleRide{
+        transform: scale(0.8);
+        border: 10px inset rgb(33, 37, 41);
     }
 }
 @media only screen and (max-width:992px) {
@@ -62,6 +77,10 @@ button.navbar-toggler{
     img#logo{
         height: 80px;
     }
+    #carouselExampleRide{
+        transform: scale(0.8);
+        border: 10px inset rgb(33, 37, 41);
+    }
 }
 @media only screen and (max-width:768px) {
     #college_name>h1{
@@ -73,6 +92,10 @@ button.navbar-toggler{
     img#logo{
         height: 70px;
     }
+    #carouselExampleRide{
+        transform: scale(0.9);
+        border: 10px inset rgb(33, 37, 41);
+    }
 }
 @media only screen and (max-width:576px) {
     #college_name>h1{
@@ -83,6 +106,10 @@ button.navbar-toggler{
     }
     img#logo{
         height: 60px;
+    }
+    #carouselExampleRide{
+        transform: scale(0.9);
+        border: 10px inset rgb(33, 37, 41);
     }
 }
 #main_content{
@@ -102,34 +129,44 @@ button.navbar-toggler{
     transition: 0.3s;
     z-index: 1;
     height: 350px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .card:hover{
     transform: scale(1.3);
     z-index: 2;
+    box-shadow:0 20px 30px rgba(0,0,0,0.19), 0 12px 12px rgba(0,0,0,0.23);
 }
-/* //updated css by nr */
+/* Main content CSS starts... */
+.main{
+    margin: 0;
+}
 
 table,td,thead,tbody{
     border: 2px solid black;
-    border-radius: 5px;
-    font-size: 1.2em;
+    font-size: 1.1em;
     background-color: bisque;
 }
-table{
-    width: 40%;
+
+th{
+    background-color: rgba(255, 225, 255, 0.55);
 }
+
+/* .carousel-control-prev-icon,.carousel-control-next-icon{
+    filter: invert(1) grayscale(100);
+} */
+.carousel-control-prev{
+    background: linear-gradient(to right, #0000007b, #00000000);
+}
+.carousel-control-next{
+    background: linear-gradient(to left, #0000007b, #00000000);
+}
+
 #welcome{
     font-size: 1.2em;
     line-height: 1.5em;
 }
 
-.main {
-
-    display: flex;
-    /* text-align: justify; */
-
-}
 #welcome{
     text-align: justify;
 }
@@ -141,6 +178,7 @@ table{
     margin-left: 10%;
 }
 
+/* ...Main Content CSS ends */
 
 #footer{
     margin: 0;
@@ -167,4 +205,30 @@ table{
         flex: 0 0 auto;
         width: 40%;
     }
+}
+
+
+/* Universal Styles */
+ol.abc{
+    counter-reset: list;
+}
+ol.abc>li{
+    list-style: none;
+}
+ol.abc>li:before{
+    content: "(" counter(list, lower-alpha) ") ";
+    counter-increment: list;
+}
+
+ol.num_brac{
+    margin: 0;
+    counter-reset: list;
+    padding-left: 0;
+}
+ol.num_brac>li{
+    list-style: none;
+}
+ol.num_brac>li:before{
+    content: "(" counter(list) ") ";
+    counter-increment: list;
 }
