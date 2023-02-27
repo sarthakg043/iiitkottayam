@@ -1,16 +1,24 @@
 h1{
     text-align: center;
+    text-decoration: underline;
+
 }
 
 table{
     font-size: small;
+    background-color: black;
+
 }
 
 td{
     padding: 10px;
     border: 2px solid;
+    background-color: black;
 }
 th{
     border: 2px solid;
-    background-color: #1e1e1e2a;
+    background-color: black;
+}
+body{
+    color: whitesmoke;
 }
